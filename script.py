@@ -22,9 +22,10 @@ def find_today_episode(date, podcastName):
 
 def random_music(date):
     searchResults = spotifyObject.current_user_playlists()
+    print(searchResults)
     for result in searchResults["items"]:
         if(result["name"] == v.playlistName):
-            randomNumber = (random() * 100) % 50
+            randomNumber = (random() * 100) % 80
             tracks = spotifyObject.playlist_tracks(result["id"])
             return tracks["items"][int(randomNumber)]["track"]["uri"]
 

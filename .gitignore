@@ -1,0 +1,6 @@
+.DS_Store
+.cache-Steven Dirjayanto
+.vscode
+__pycache__
+variables.py
+myenv/
